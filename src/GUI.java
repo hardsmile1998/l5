@@ -13,6 +13,7 @@ public class GUI extends JFrame {
     private JButton count_words = new JButton("Количество слов");
     private JLabel label_words = new JLabel("xxx");
     private JButton count_uwords = new JButton("Количество уникальных слов");
+    private JButton help = new JButton("HELP");
     private JLabel label_uwords = new JLabel("xxx");
     private JButton plus = new JButton("+");
     private JScrollPane scrollPane = new JScrollPane();
@@ -79,6 +80,7 @@ public class GUI extends JFrame {
         sl_panel.putConstraint(SpringLayout.WEST, count_words, 0, SpringLayout.WEST, panel);
         panel.setLayout(sl_panel);
         panel.add(count_symb);
+        panel.add(help);
         panel.add(label_symbols);
         panel.add(count_letters);
         panel.add(label_letters);
